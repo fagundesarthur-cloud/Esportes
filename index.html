@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SPBRE Esportes</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container nav">
+            <a href="#" class="logo">
+                SPBRE<span> Esportes</span>
+            </a>
+
+            <nav>
+                <a href="#inicio">Início</a>
+                <a href="#futebol">Futebol</a>
+                <a href="#basquete">Basquete</a>
+                <a href="#tabela">Tabela</a>
+            </nav>
+
+            <button id="menuBtn" class="menu-btn">☰</button>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section id="inicio" class="hero">
+            <div class="container hero-content">
+                <div>
+                    <span class="tag">SPBRE ESPORTES</span>
+
+                    <h1>
+                        Tudo sobre o mundo dos
+                        <span>esportes</span>
+                    </h1>
+
+                    <p>
+                        Notícias, resultados, tabelas e informações
+                        sobre futebol, basquete e muito mais.
+                    </p>
+
+                    <a href="#noticias" class="btn">
+                        Ver notícias
+                    </a>
+                </div>
+
+                <div class="hero-ball">
+                    ⚽
+                </div>
+            </div>
+        </section>
+
+        <!-- NOTÍCIAS -->
+        <section id="noticias" class="section">
+            <div class="container">
+
+                <div class="section-title">
+                    <div>
+                        <span>ATUALIZAÇÕES</span>
+                        <h2>Últimas notícias</h2>
+                    </div>
+                </div>
+
+                <div id="newsContainer" class="news-grid">
+                    <!-- Notícias inseridas pelo JavaScript -->
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FUTEBOL -->
+        <section id="futebol" class="section dark-section">
+            <div class="container">
+
+                <div class="section-title">
+                    <div>
+                        <span>FUTEBOL</span>
+                        <h2>Jogos de hoje</h2>
+                    </div>
+                </div>
+
+                <div id="gamesContainer" class="games-grid">
+                    <!-- Jogos inseridos pelo JavaScript -->
+                </div>
+
+            </div>
+        </section>
+
+        <!-- BASQUETE -->
+        <section id="basquete" class="section">
+            <div class="container">
+
+                <div class="section-title">
+                    <div>
+                        <span>BASQUETE</span>
+                        <h2>Destaques</h2>
+                    </div>
+                </div>
+
+                <div class="sports-card">
+                    <div class="sport-icon">🏀</div>
+
+                    <div>
+                        <h3>Basquete</h3>
+                        <p>
+                            Acompanhe resultados, notícias e principais
+                            acontecimentos do basquete.
+                        </p>
+                    </div>
+
+                    <button onclick="showMessage('Seção de basquete selecionada!')">
+                        Ver mais
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- TABELA -->
+        <section id="tabela" class="section table-section">
+            <div class="container">
+
+                <div class="section-title">
+                    <div>
+                        <span>CAMPEONATO</span>
+                        <h2>Tabela</h2>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Time</th>
+                                <th>J</th>
+                                <th>V</th>
+                                <th>E</th>
+                                <th>D</th>
+                                <th>PTS</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="tableBody">
+                            <!-- Tabela inserida pelo JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div>
+                <h2>SPBRE Esportes</h2>
+                <p>Informação e esporte em um só lugar.</p>
+            </div>
+
+            <p>© <span id="year"></span> SPBRE Esportes</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
